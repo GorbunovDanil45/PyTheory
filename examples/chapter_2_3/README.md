@@ -80,3 +80,42 @@ while name != "alex":
 while (name := input()) != "alex":
     print("Укажите корректное имя")
 ```
+
+---
+
+# 04.06.2026
+
+
+- инкрементировать - увеличить
+- декрементировать - уменшить
+
+
+
+```python
+n: int = 789
+
+# шаг 1
+last_digit: int = n % 10  # 9
+n = n // 10  # 78
+
+# шаг 2
+last_digit: int = n % 10  # 8
+n = n // 10  # 7
+
+# шаг 3
+last_digit: int = n % 10  # 7
+n = n // 10  # 0
+
+print(n)
+```
+
+Условие для `while`: Когда `n` будет равна нулю.
+
+
+```python
+n: int = 789
+
+while n != 0:
+    last_digit: int = n % 10
+    n = n // 10
+```
