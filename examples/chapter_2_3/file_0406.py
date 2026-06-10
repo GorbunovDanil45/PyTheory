@@ -87,3 +87,12 @@ print(total_prod)
 # найдите произведение всех цифр пятизначного числа
 
 n: int = int(input())  # 12345, 67492, 34054
+
+total_prod: int = 1
+while n > 0:
+    m = n % 10
+    total_prod = total_prod * m
+
+    n = n // 10
+
+print(total_prod)
