@@ -89,7 +89,8 @@ print(total_prod)
 n: int = int(input())  # 12345, 67492, 34054
 
 total_prod: int = 1
-while n > 0:
+# while n != 0:  # сломается, если вводится отрицательное число.
+while n > 0:  # безопасное условие
     m = n % 10
     total_prod = total_prod * m
 
