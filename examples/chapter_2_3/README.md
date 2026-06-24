@@ -85,11 +85,8 @@ while (name := input()) != "alex":
 
 # 04.06.2026
 
-
 - инкрементировать - увеличить
 - декрементировать - уменшить
-
-
 
 ```python
 n: int = 789
@@ -111,7 +108,6 @@ print(n)
 
 Условие для `while`: Когда `n` будет равна нулю.
 
-
 ```python
 n: int = 789
 
@@ -124,3 +120,44 @@ while n != 0:
 
 ## Операторы циклов
 
+[Исходный код](file_1106.py)
+
+---
+
+## Какие алгоритмы мы уже знаем
+
+- Линеный поиск
+
+```python
+fruits: list[str] = ["apple", "banana", "cherry", "grape", "mango"]
+target: str = "cherry"
+
+for fruit in fruits:
+    if fruit == target:
+        print(f"{fruit} fruit found")
+        break
+```
+
+- Бинарный поиск
+
+```python
+# например уже реализованная программа "Угадай число"
+low: int = 1
+high: int = 1000
+more: str = 'Больше'
+fewer: str = 'Меньше'
+target: str = 'Угадал!'
+
+while True:
+    guess = (low + high) // 2
+    print(guess)
+    reply: str = input()
+
+    if reply == target:
+        break
+
+    if reply == fewer:
+        high = guess - 1
+    elif reply == more:
+        low = guess + 1     
+```
